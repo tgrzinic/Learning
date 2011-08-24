@@ -4,7 +4,7 @@ def squareRootBi(x,epsilon):
     low=0
     high=max(x,1.0)
     guess=(low+high)/2.0
-    ctr=1
+    ctr=0
     while abs(guess**2-x) > epsilon and ctr <=100:
         #print 'low:',low,'high:',high, 'quess',guess
         if guess**2<x:
